@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank.WebUI", "Bank.WebUI\Ba
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank.WebUI.Tests", "Bank.WebUI.Tests\Bank.WebUI.Tests.csproj", "{64EB7EB3-20B9-4FCD-BC3A-C37F83979DF7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank.Domain", "Bank.Domain\Bank.Domain.csproj", "{36C651C6-E94F-4625-ADFF-5165BACC6262}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{64EB7EB3-20B9-4FCD-BC3A-C37F83979DF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64EB7EB3-20B9-4FCD-BC3A-C37F83979DF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64EB7EB3-20B9-4FCD-BC3A-C37F83979DF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36C651C6-E94F-4625-ADFF-5165BACC6262}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36C651C6-E94F-4625-ADFF-5165BACC6262}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36C651C6-E94F-4625-ADFF-5165BACC6262}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36C651C6-E94F-4625-ADFF-5165BACC6262}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
