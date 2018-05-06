@@ -5,10 +5,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Bank.Entities;
 
-namespace Bank.Entities
+namespace Bank.Data.Telefon
 {
-    public class Telefon
+    public class TelefonRepository
     {
         [Key]
         public int TelefonID { get; set; }
@@ -16,7 +17,7 @@ namespace Bank.Entities
         [ForeignKey("Klient")]
         public int KlientID { get; set; }
 
-        
+
         public int NumerTelefonu { get; set; }
 
 
