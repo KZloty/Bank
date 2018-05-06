@@ -42,7 +42,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adres\Adres.cs" />
-    <Compile Include="KlientViewModel\KlientCreateViewModel.cs" />
     <Compile Include="Klient\Klient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Telefon\Telefon.cs" />
