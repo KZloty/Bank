@@ -142,12 +142,6 @@
     <Folder Include="Controllers\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Bank.Domain\Bank.Domain.csproj">
-      <Project>{36c651c6-e94f-4625-adff-5165bacc6262}</Project>
-      <Name>Bank.Domain</Name>
-    </ProjectReference>
-  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
