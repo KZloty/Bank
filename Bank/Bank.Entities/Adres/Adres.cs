@@ -16,14 +16,14 @@ namespace Bank.Entities
         [MaxLength(20), MinLength(2)]
         public string Miasto { get; set; }
 
-        [Range(00000,99999)]
-        public int KodPocztowy { get; set; }
+        //[Range(00000,99999)]
+        public int? KodPocztowy { get; set; }
 
-        [Required]
-        [MaxLength(20), MinLength(2)]
+        //[Required]
+        //[MaxLength(20), MinLength(2)]
         public string Ulica { get; set; }
 
-        [Required]
+        //[Required]
         public string NumerDomu { get; set; }
         
         [Required]

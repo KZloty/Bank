@@ -1,0 +1,78 @@
+﻿@model IEnumerable<Bank.WebUI.Models.ApplicationForm>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Imie)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nazwisko)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PESEL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Miasto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KodPocztowy)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ulica)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumerDomu)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumerTelefonu)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Imie)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nazwisko)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PESEL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Miasto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KodPocztowy)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ulica)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumerDomu)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumerTelefonu)
+        </td>
+        <td>
+            @Html.ActionLink("Open Account", "Open","ApplicationForms", new { id = item.ApplicationID }, new { @class = "btn btn-success " })
+            @Html.ActionLink("Edit", "Edit", new { id = item.ApplicationID }, new { @class = "btn btn-primary " })
+            @Html.ActionLink("Details", "Details", new { id = item.ApplicationID }, new { @class = "btn btn-primary " })
+            @Html.ActionLink("Delete", "Delete", new { id = item.ApplicationID }, new { @class = "btn btn-danger " })
+        </td>
+        
+    </tr>
+    <div class="btn btn-success"></div>
+}
+
+</table>
